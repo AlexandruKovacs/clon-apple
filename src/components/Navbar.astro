@@ -1,0 +1,22 @@
+---
+import { Image } from "astro:assets"
+
+import appleLogo from '../icons/apple-developer.svg';
+---
+
+<nav class="sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-gray-200 firefox:bg-opacity-90">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="flex items-center justify-between h-10">
+        <Image src={appleLogo} alt="Apple Developer" class="w-24"/>
+        <div class="flez space-x-14 text-gray-900">
+          <a href="#">News</a>
+          <a href="#">Discover</a>
+          <a href="#">Design</a>
+          <a href="#">Develop</a>
+          <a href="#">Distribute</a>
+          <a href="#">Support</a>
+          <a href="#">Account</a>
+        </div>
+      </div>
+    </div>
+  </nav>
